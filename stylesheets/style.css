@@ -1,0 +1,55 @@
+hr {
+	margin-bottom: 1em;
+}
+sup {
+	vertical-align: super;
+	font-size: 75%;
+}
+.section-header {
+	font-style: italic;
+}
+.section-body {
+	float: right;
+	margin-bottom: 1em;
+}
+.item-body {
+	float: left;
+	margin-top: 0.5em;
+	margin-left: 1em;
+	text-align: justify;
+}
+.item-body ul {
+	list-style-type: disc;
+	margin-left: 1.5em;
+	margin-bottom: 0;
+}
+.item-body li {
+	margin-bottom: 0;
+}
+.date {
+	text-align: right;
+}
+.title {
+	font-style: italic;
+}
+@media only screen {
+	.print-show {
+		display: none;
+	}
+}
+@media only print {
+	body {
+		font-size: 105%;
+		background: white;
+	}
+	.print-hide {
+		display: none;
+	}
+	a {
+		text-decoration: none;
+	}
+	a.printable:link:after, a.printable:visited:after {
+		content: " <" attr(href) "> ";
+		font-size: 90%;
+	}
+}
